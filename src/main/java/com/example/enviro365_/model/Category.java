@@ -9,7 +9,7 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String categoryId;
+    private int categoryId;
 
     @Column(nullable = false)
     private String description;
@@ -17,11 +17,11 @@ public class Category {
     @Column(nullable = false, unique = true)
     private String typeOfCategory;
 
-    public String getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(String categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 

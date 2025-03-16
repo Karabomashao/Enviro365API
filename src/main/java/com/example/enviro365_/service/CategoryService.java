@@ -24,14 +24,15 @@ public class CategoryService {
         return categoryRepository.findById(id).orElseThrow(() -> new NullPointerException("Id not found"));
     }
 
-    public void saveCategory(Category category){
-        categoryRepository.save(category);
+    public Category saveCategory(Category category){
+        return categoryRepository.save(category);
     }
 
-    public void updateCategoryById(int id, Category category){
+    public Category updateCategoryById(int id, Category category){
         Category existingCategory = findCategoryById(id);
         existingCategory.setDescription(category.getDescription());
         existingCategory.setTypeOfCategory(category.getTypeOfCategory());
+        return categoryRepository.save(existingCategory);
     }
 
     public void deleteCategoryById(int id){
