@@ -1,6 +1,5 @@
-package com.example.enviro365_.controller;
+package com.example.enviro365_.model;
 
-import com.example.enviro365_.model.Category;
 import jakarta.persistence.*;
 
 @Entity
