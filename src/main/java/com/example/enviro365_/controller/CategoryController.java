@@ -43,4 +43,9 @@ public class CategoryController {
         categoryService.deleteCategoryById(id);
     }
 
+    @DeleteMapping()
+    public void deleteAllCategories(){
+        categoryService.deleteAllCategories();
+    }
+
 }
