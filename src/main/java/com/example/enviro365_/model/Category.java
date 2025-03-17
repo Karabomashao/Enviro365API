@@ -2,6 +2,8 @@ package com.example.enviro365_.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 
 @Entity
 @Table(name = "Categories")
@@ -16,6 +18,9 @@ public class Category {
 
     @Column(nullable = false, unique = true)
     private String typeOfCategory;
+
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<WasteType> wasteTypes;
 
     public int getCategoryId() {
         return categoryId;
