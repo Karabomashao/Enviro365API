@@ -36,6 +36,7 @@ public class WasteTypeService {
     }
 
     public void deleteWasteTypeById(int id){
+        findWasteTypeById(id);
         wasteTypeRepository.deleteById(id);
     }
 

@@ -37,6 +37,7 @@ public class DisposalGuidelineService {
     }
 
     public void deleteDisposalGuidelineById(int id){
+        findDisposalGuidelineById(id);
         disposalGuidelineRepository.deleteById(id);
     }
 
