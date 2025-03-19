@@ -48,7 +48,7 @@ public class Enviro365Application {
 			RecyclingTip recyclingTip = recyclingTipRepository.save(new RecyclingTip(battery,
 					"Sort batteries into categories like single-use.",
 					"Never dispose of batteries in regular household trash as they can leak harmful chemicals into the environment.",
-					"alkaline"))
+					"alkaline"));
 
 //			RecyclingTip recyclingTip = new RecyclingTip();
 //			recyclingTip.setWasteType(battery);
