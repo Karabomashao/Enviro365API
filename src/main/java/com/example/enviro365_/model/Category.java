@@ -1,6 +1,7 @@
 package com.example.enviro365_.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 import java.util.List;
 
@@ -13,10 +14,12 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int categoryId;
 
+    @NotBlank(message = "Description cannot be blank")
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false, unique = true)
+    @Column(unique=true, nullable = false)
+    @NotBlank(message = "Waste category cannot be blank")
     private String typeOfCategory;
 
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)

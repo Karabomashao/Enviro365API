@@ -1,6 +1,9 @@
 package com.example.enviro365_.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+
+import java.util.List;
 
 @Entity
 @Table(name = "Waste Types")
@@ -9,13 +12,23 @@ public class WasteType {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int wasteTypeId;
 
+    @NotBlank(message = "Type of waste cannot be blank")
+    @Column(nullable = false, unique = true)
     private String wasteType;
 
+    @NotBlank(message = "Waste example of waste cannot be blank")
+    @Column(nullable = false)
     private String example;
 
     @ManyToOne
-    @JoinColumn(name = "categoryId")
+    @JoinColumn(name = "categoryId", nullable = false)
     private Category category;
+
+    @OneToMany(mappedBy = "wasteType", cascade = CascadeType.ALL)
+    private List<DisposalGuideline> disposalGuidelineList;
+
+    @OneToMany(mappedBy = "wasteType", cascade = CascadeType.ALL)
+    private List<RecyclingTip> recyclingTipList;
 
     public int getWasteTypeId() {
         return wasteTypeId;
