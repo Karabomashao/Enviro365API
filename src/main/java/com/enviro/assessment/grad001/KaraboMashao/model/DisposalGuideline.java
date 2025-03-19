@@ -1,4 +1,4 @@
-package com.example.enviro365_.model;
+package com.enviro.assessment.grad001.KaraboMashao.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -22,6 +22,16 @@ public class DisposalGuideline {
     @ManyToOne
     @JoinColumn(name = "waste_id", nullable = false)
     private WasteType wasteType;
+
+    public DisposalGuideline(String disposalMethod, String location, WasteType wasteType) {
+        this.disposalMethod = disposalMethod;
+        this.location = location;
+        this.wasteType = wasteType;
+    }
+
+    public DisposalGuideline() {
+
+    }
 
     public int getGuidelineId() {
         return guidelineId;

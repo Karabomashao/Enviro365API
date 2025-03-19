@@ -1,4 +1,4 @@
-package com.example.enviro365_.exceptions;
+package com.enviro.assessment.grad001.KaraboMashao.exceptions;
 
 import java.time.LocalDateTime;
 

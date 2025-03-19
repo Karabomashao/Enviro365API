@@ -1,8 +1,8 @@
-package com.example.enviro365_.controller;
+package com.enviro.assessment.grad001.KaraboMashao.controller;
 
 
-import com.example.enviro365_.model.WasteType;
-import com.example.enviro365_.service.WasteTypeService;
+import com.enviro.assessment.grad001.KaraboMashao.model.WasteType;
+import com.enviro.assessment.grad001.KaraboMashao.service.WasteTypeService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

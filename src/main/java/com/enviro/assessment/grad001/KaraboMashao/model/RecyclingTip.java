@@ -1,4 +1,4 @@
-package com.example.enviro365_.model;
+package com.enviro.assessment.grad001.KaraboMashao.model;
 
 
 import jakarta.persistence.*;
@@ -23,6 +23,17 @@ public class RecyclingTip {
     @ManyToOne
     @JoinColumn(name = "waste_id", nullable = false)
     private WasteType wasteType;
+
+    public RecyclingTip(WasteType wasteType, String tipDescription, String additionalInfo, String material) {
+        this.additionalInfo = additionalInfo;
+        this.material = material;
+        this.tipDescription = tipDescription;
+        this.wasteType = wasteType;
+    }
+
+    public RecyclingTip() {
+
+    }
 
     public int getTipId() {
         return tipId;

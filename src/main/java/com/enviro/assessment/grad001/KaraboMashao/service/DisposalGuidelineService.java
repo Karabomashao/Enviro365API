@@ -1,7 +1,8 @@
-package com.example.enviro365_.service;
+package com.enviro.assessment.grad001.KaraboMashao.service;
 
-import com.example.enviro365_.model.DisposalGuideline;
-import com.example.enviro365_.repository.DisposalGuidelineRepository;
+
+import com.enviro.assessment.grad001.KaraboMashao.model.DisposalGuideline;
+import com.enviro.assessment.grad001.KaraboMashao.repository.DisposalGuidelineRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.enviro365_.model;
+package com.enviro.assessment.grad001.KaraboMashao.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -24,6 +24,15 @@ public class Category {
 
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     private List<WasteType> wasteTypes;
+
+    public Category(String typeOfCategory, String description) {
+        this.description = description;
+        this.typeOfCategory = typeOfCategory;
+    }
+
+    public Category() {
+
+    }
 
     public int getCategoryId() {
         return categoryId;

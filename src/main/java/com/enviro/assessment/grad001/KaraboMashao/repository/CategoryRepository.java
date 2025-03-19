@@ -1,6 +1,6 @@
-package com.example.enviro365_.repository;
+package com.enviro.assessment.grad001.KaraboMashao.repository;
 
-import com.example.enviro365_.model.Category;
+import com.enviro.assessment.grad001.KaraboMashao.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

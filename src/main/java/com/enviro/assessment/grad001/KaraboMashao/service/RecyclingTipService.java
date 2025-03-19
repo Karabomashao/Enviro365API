@@ -1,10 +1,10 @@
-package com.example.enviro365_.service;
+package com.enviro.assessment.grad001.KaraboMashao.service;
 
 
-import com.example.enviro365_.model.RecyclingTip;
-import com.example.enviro365_.model.WasteType;
-import com.example.enviro365_.repository.RecyclingTipRepository;
-import com.example.enviro365_.repository.WasteTypeRepository;
+
+import com.enviro.assessment.grad001.KaraboMashao.model.RecyclingTip;
+import com.enviro.assessment.grad001.KaraboMashao.repository.RecyclingTipRepository;
+import com.enviro.assessment.grad001.KaraboMashao.repository.WasteTypeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

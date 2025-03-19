@@ -1,7 +1,8 @@
-package com.example.enviro365_.service;
+package com.enviro.assessment.grad001.KaraboMashao.service;
 
-import com.example.enviro365_.model.Category;
-import com.example.enviro365_.repository.CategoryRepository;
+
+import com.enviro.assessment.grad001.KaraboMashao.model.Category;
+import com.enviro.assessment.grad001.KaraboMashao.repository.CategoryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

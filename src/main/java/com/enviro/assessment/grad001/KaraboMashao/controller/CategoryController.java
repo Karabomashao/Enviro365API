@@ -1,8 +1,8 @@
-package com.example.enviro365_.controller;
+package com.enviro.assessment.grad001.KaraboMashao.controller;
 
 
-import com.example.enviro365_.model.Category;
-import com.example.enviro365_.service.CategoryService;
+import com.enviro.assessment.grad001.KaraboMashao.model.Category;
+import com.enviro.assessment.grad001.KaraboMashao.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
